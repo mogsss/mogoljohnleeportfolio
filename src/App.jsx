@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import About from './pages/About'
 import Home from './pages/Home'
 import Projects from './pages/Projects';
@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 function App(){
   return(
     <>
-    <HashRouter basename="/mogoljohnleeportfolio">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -21,7 +21,7 @@ function App(){
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
     <div>
     <Footer />
     </div>
