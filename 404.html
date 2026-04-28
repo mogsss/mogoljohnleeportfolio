@@ -2,38 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>Redirecting to Home...</title>
     <script>
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafrex/spa-github-pages
-      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&') 
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      // Simple redirect to home page for GitHub Pages SPA
+      window.location.href = '/mogoljohnleeportfolio/';
     </script>
   </head>
   <body>
-    <script>
-      // This script handles the redirect for GitHub Pages SPA routing
-      (function() {
-        var path = window.location.pathname;
-        var basePath = '/mogoljohnleeportfolio';
-        
-        // Remove the base path from the current path
-        if (path.startsWith(basePath)) {
-          path = path.substring(basePath.length);
-        }
-        
-        // Redirect to index.html with the original path as hash
-        window.location.href = basePath + '/#' + path;
-      })();
-    </script>
+    <p>Redirecting to home page...</p>
   </body>
 </html>
