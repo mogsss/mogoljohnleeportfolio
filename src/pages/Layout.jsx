@@ -24,7 +24,6 @@ export default function Layout() {
               Mogs<span className="text-teal-400">tech</span><span>&lt;/&gt;</span>.
             </div>
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 text-white font-medium">
               <Link to="/" className={`${baseClass} ${isActive('/') ? activeClass : ''}`}>Home</Link>
               <Link to="/about" className={`${baseClass} ${isActive('/about') ? activeClass : ''}`}>About</Link>
@@ -32,7 +31,6 @@ export default function Layout() {
               <Link to="/contact" className={`${baseClass} ${isActive('/contact') ? activeClass : ''}`}>Contact</Link>
             </div>
 
-            {/* Hamburger Button */}
             <div className="md:hidden">
               <button onClick={toggleMenu} className="text-white block hover:text-gray-400">
                 {menuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -41,7 +39,6 @@ export default function Layout() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden text-end px-4 pb-4 space-y-2 text-white font-medium" style={{ backgroundColor: '#021526' }}>
             <Link to="/" onClick={toggleMenu} className={`block ${baseClass} ${isActive('/') ? activeClass : ''}`}>Home</Link>

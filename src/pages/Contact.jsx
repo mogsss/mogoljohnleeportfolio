@@ -15,7 +15,6 @@ export default function Contact() {
   return (
     <div className="bg-slate-950 py-16 px-6 md:px-12 lg:px-24 min-h-screen text-white grid md:grid-cols-2 gap-12 items-center relative overflow-hidden">
       
-      {/* Background Accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-10 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[150px]"></div>
       </div>

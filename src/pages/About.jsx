@@ -14,7 +14,6 @@ export default function About() {
   return (
     <div className="bg-gradient-to-r from-gray-950 to-slate-900 min-h-screen p-6 md:p-12 font-sans">
       
-      {/* 1. Hero / Intro Section */}
       <div className="text-white px-6 py-12 md:px-16 lg:px-32 bg-gray-900/50 backdrop-blur-md rounded-3xl shadow-[0_0_40px_rgba(59,130,246,0.15)] border border-gray-800 mb-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-teal-400 text-sm font-semibold uppercase tracking-widest mb-3">
@@ -36,7 +35,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* 2. Core Information Cards */}
       <section className="mb-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <div className="bg-gray-800/80 backdrop-blur-sm rounded-2xl text-white p-8 border border-gray-700 shadow-lg hover:-translate-y-2 transition-all duration-300">
@@ -72,7 +70,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* 3. Tech Stack & Skills Section */}
       <section className="max-w-6xl mx-auto mb-16">
         <h2 className="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-4">
           <span className="text-teal-400 mr-2">/</span> Tech Stack & Skills
@@ -86,7 +83,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* 4. What I Do Section */}
       <section className="max-w-6xl mx-auto">
         <h2 className="text-2xl font-bold text-white mb-8 border-b border-gray-800 pb-4">
           <span className="text-blue-400 mr-2">/</span> What I Do

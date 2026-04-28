@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-24 bg-slate-950 text-slate-50 relative overflow-hidden">
-        {/* Abstract Background Decoration */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-teal-500 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-blue-600 rounded-full blur-[120px]"></div>
@@ -43,7 +42,6 @@ export default function Home() {
 
         <div className="w-full md:w-1/2 flex justify-center items-center">
   <div className="relative">
-    {/* Inner Border Ring */}
     <div className="absolute inset-0 rounded-full border-2 border-teal-500/30 transform scale-105"></div>
     
     <img
