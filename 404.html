@@ -24,31 +24,15 @@
       // This script handles the redirect for GitHub Pages SPA routing
       (function() {
         var path = window.location.pathname;
-        var hash = window.location.hash;
         var basePath = '/mogoljohnleeportfolio';
         
-        // Check if we already have a hash route (from direct navigation)
-        if (hash && hash !== '/') {
-          // Already has hash, just redirect to main app
-          window.location.href = basePath + '/' + hash;
-        } else {
-          // Remove the base path from the current path
-          if (path.startsWith(basePath)) {
-            path = path.substring(basePath.length);
-          }
-          
-          // Remove trailing slash if present
-          if (path.endsWith('/')) {
-            path = path.slice(0, -1);
-          }
-          
-          // If path is not empty, redirect with hash
-          if (path && path !== '') {
-            window.location.href = basePath + '/#' + path;
-          } else {
-            window.location.href = basePath + '/';
-          }
+        // Remove the base path from the current path
+        if (path.startsWith(basePath)) {
+          path = path.substring(basePath.length);
         }
+        
+        // Redirect to index.html with the original path as hash
+        window.location.href = basePath + '/#' + path;
       })();
     </script>
   </body>
