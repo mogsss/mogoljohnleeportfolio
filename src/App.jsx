@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import About from './pages/About'
 import Home from './pages/Home'
 import Projects from './pages/Projects';
@@ -13,7 +11,7 @@ import Footer from '../components/footer';
 function App(){
   return(
     <>
-    <BrowserRouter basename="/mogoljohnleeportfolio">
+    <HashRouter basename="/mogoljohnleeportfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -23,7 +21,7 @@ function App(){
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     <div>
     <Footer />
     </div>

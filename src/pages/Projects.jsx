@@ -1,11 +1,15 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
+import midtermImg from '../assets/midterm.png';
+import mogstaskImg from '../assets/mogstask.png';
+import orderingImg from '../assets/orderingsystem.png';
+import portfolioImg from '../assets/portfolio.png';
 
 export default function Projects() {
   // Added "tech" arrays and placeholder links to make it look professional
   const projects = [
     { 
-      src: "./midterm.png", 
+      src: midtermImg, 
       title: "Midterm Project", 
       description: "A comprehensive project demonstrating core web development skills and basic backend logic.",
       tech: ["PHP", "MySQL", "Bootstrap"],
@@ -13,7 +17,7 @@ export default function Projects() {
       live: "#"
     },
     { 
-      src: "./mogstask.png", 
+      src: mogstaskImg, 
       title: "MogsTask App", 
       description: "A mobile productivity app designed for managing daily tasks and schedules efficiently.",
       tech: ["React Native", "JavaScript"],
@@ -21,7 +25,7 @@ export default function Projects() {
       live: "#"
     },
     { 
-      src: "./orderingsystem.png", 
+      src: orderingImg, 
       title: "Ordering System", 
       description: "A streamlined ordering management system tailored for small business operations.",
       tech: ["Laravel", "Tailwind CSS"],
@@ -29,7 +33,7 @@ export default function Projects() {
       live: "#"
     },
     { 
-      src: "./portfolio.png", 
+      src: portfolioImg, 
       title: "My Portfolio", 
       description: "A personal portfolio website showcasing my work, skills, and professional journey.",
       tech: ["React", "Tailwind CSS"],
