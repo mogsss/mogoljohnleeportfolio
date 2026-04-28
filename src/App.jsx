@@ -9,6 +9,7 @@ import NoPage from './pages/NoPage';
 import Layout from './pages/Layout';
 import Footer from '../components/footer';
 
+
 function App(){
   return(
     <>

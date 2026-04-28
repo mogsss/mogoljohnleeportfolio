@@ -1,8 +1,8 @@
 import React from 'react';
 import profileImg from '../assets/profile.jpg';
 import { Link } from 'react-router-dom';
-import Me from '/components/Me';
-import Skill from '/components/skill'
+import Me from '../../components/Me';
+import Skill from '../../components/skill'
 
 export default function Home() {
   return (
