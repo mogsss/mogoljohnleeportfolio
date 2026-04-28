@@ -13,7 +13,7 @@ import Footer from '../components/footer';
 function App(){
   return(
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/mogoljohnleeportfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
